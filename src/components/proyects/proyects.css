@@ -1,0 +1,86 @@
+.proyects-container {
+  font-family: "verdana", "verdana";
+  margin-top: 3rem;
+  overflow-y: hidden;
+
+  h2 {
+    font-size: 4.5rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    padding: 0 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-family: "Arial Narrow Bold", sans-serif;
+    padding: 0 3rem;
+  }
+}
+
+.project_img {
+  position: relative;
+  bottom: 1.5rem;
+  left: 2.7em;
+  box-shadow: 1rem 25px 50px 2px rgb(0 0 0 / 0.25);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.project_info {
+  padding-left: 5.7rem;
+  box-shadow: 1rem 25px 50px 12px rgb(0 0 0 / 0.25);
+  background-color: white;
+
+  h3 {
+    font-size: 2.5rem;
+    font-family: "verdana", "verdana";
+    margin: 1rem 0;
+  }
+  .subtitle {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+
+.tech-container {
+  display: flex;
+  flex-direction: row;
+
+  img {
+    width: 4rem;
+    margin: 1rem 0.6rem;
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideout {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -270px;
+  }
+}

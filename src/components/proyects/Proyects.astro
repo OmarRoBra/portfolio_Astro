@@ -1,0 +1,112 @@
+---
+import './proyects.css'
+---
+
+<div  class="h-screen  px-5  proyects-container overflow-y-hidden	">
+  <h2>My experience</h2>
+  <h3>There are some projects  where i was involved</h3>
+  <div  id="main-container" class="flex flex-row w-full h-full align-middle justify-center items-center carousel-container ">
+    <button data-confetti-button> {"<"} </button>
+
+    <div class="flex flex-row w-full h-[60vh] p-8">
+
+      <div class="w-1/2 project_img ">
+       <img id="banner"  src="https://nickjanetakis.com/assets/blog/cards/how-to-start-and-finish-any-web-app-project-678900795cfd6d4fa60e3655dd62ae9f61ef5e14b62ca62050e817e43e861f11.jpg"/>
+      </div>
+
+      <div class="w-1/2 project_info">
+        <h3 id="cabecera" >Project name</h3>
+        <p id="description" class=" my-5">Project description</p>
+        <p class="subtitle">software used</p>
+
+        <div class="tech-container" tech-imgs>
+
+        </div>
+
+        <div>
+          testimonios
+        </div>
+      </div>
+
+    </div>
+    
+    <button next-slide-btn > {">"} </button>
+  </div>
+</div>
+
+
+
+<script>
+  import {projects} from './Project.js'
+
+  let actualIndex = 0 
+
+  const setData=(index:number)=>{
+    
+    document.getElementById("cabecera").innerHTML = projects[actualIndex].nombre;
+    const banner = document.getElementById("banner")
+    banner.src = projects[actualIndex].imagen;
+    document.getElementById("description").innerHTML = projects[actualIndex].description;
+    var picture = document.querySelectorAll(".tech-img");
+    
+
+    let techStack =  projects[actualIndex].techs
+
+   picture.length > 0 && picture.forEach((ele:any)=>{
+      ele.remove();
+    })
+
+    techStack.forEach((ele:any)=>{
+    const image = document.createElement('img')
+    image.src =  ele.src
+    image.className ='tech-img'
+    techContainers.appendChild(image)
+  }) 
+
+  }
+  // Find our component DOM on the page.
+  const buttons = document.querySelector('[data-confetti-button]');
+  const nextBtn = document.querySelector('[next-slide-btn]');
+  const mainDiv = document.getElementById("main-container")
+
+
+  const techContainers = document.querySelector('[tech-imgs]')
+  setData()
+
+  
+
+  // Add event listeners to fire confetti when a button is clicked.
+ 
+  buttons.addEventListener("click", () => {
+    actualIndex -=1
+    if(actualIndex <0){
+      actualIndex = projects.length -1
+    }
+    
+    mainDiv.style.animation = "";
+    void mainDiv.offsetWidth; // trigger reflow
+    mainDiv.style.animation = `slidein  ease forwards 1s `;
+    
+    
+
+    setData()
+  });
+
+  nextBtn.addEventListener("click", () => {
+    actualIndex +=1
+
+    if(actualIndex > projects.length -1){
+      actualIndex = 0
+    }
+
+    mainDiv.style.animation = "";
+    void mainDiv.offsetWidth; // trigger reflow
+    mainDiv.style.animation = `slideout   forwards 1s `;
+
+
+    setData()
+  });
+
+
+  
+</script>

@@ -1,0 +1,80 @@
+h2 {
+  color: black;
+  font-size: 2.5rem;
+}
+
+.black-container {
+  color: #e1ebfb;
+  display: block;
+  background-color: #B3C8CF;
+  align-items: center;
+  position: relative;
+}
+.decoration-section {
+  padding-top: 5rem;
+  justify-content: center;
+  text-align: center;
+  display: block;
+  background-color: #B3C8CF;
+  
+}
+.decoration-section h2 {
+  color:#4682A9;
+  z-index: 1;
+  font-family: "HK Grotesk", sans-serif;
+  background-color: #B3C8CF;
+  font-size: 30px;
+  font-weight: 50;
+}
+.decoration-section h1 {
+  z-index: 1;
+  margin-top: 2rem;
+  color: #f6f9fe;
+  font-family: "HK Grotesk", sans-serif;
+  background-color: #B3C8CF;
+  font-size: 50px;
+}
+.decoration-section p {
+  margin-top: 2rem;
+  color: #4682A9;
+  font-family: "HK Grotesk", sans-serif;
+  background-color: #B3C8CF;
+  font-size: 20px;
+}
+
+.decoration-section button {
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "HK Grotesk", sans-serif;
+  background-color: black;
+  letter-spacing: 0.8%;
+  margin: 4rem;
+  padding: 1.5rem;
+  border: none;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.wave1 {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    width: 30%;
+  }
+  .wave2 {
+    background-color: transparent;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 0;
+    width: 30%;
+  }
+  .wave3 {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    z-index: 0;
+    width: 30%;
+  }
