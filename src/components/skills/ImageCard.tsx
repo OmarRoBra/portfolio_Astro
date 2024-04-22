@@ -1,14 +1,5 @@
-import React from "react";
 import "./skills.css";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Image,
-  CardFooter,
-  Button,
-  Slider,
-} from "@nextui-org/react";
+import { Card, CardFooter, Slider } from "@nextui-org/react";
 export default function App({ img }: { img: string }) {
   return (
     <Card isFooterBlurred radius="lg" className="flip-card">

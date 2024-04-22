@@ -84,3 +84,33 @@
     top: -270px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .project_img {
+    position: relative;
+    bottom: 0.7rem;
+    left: 0.1em;
+
+    img {
+      width: 100%;
+      height: 14rem;
+    }
+  }
+
+  .project_info {
+    padding-left: 0.1rem;
+    box-shadow: 1rem 25px 50px 12px rgb(0 0 0 / 0.25);
+    background-color: white;
+
+    h3 {
+      font-size: 1.5rem;
+      font-family: "verdana", "verdana";
+      margin: 1rem 0;
+      padding-left: 0.6rem;
+    }
+    .subtitle {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+  }
+}
