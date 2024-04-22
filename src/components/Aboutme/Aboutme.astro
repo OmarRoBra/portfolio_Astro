@@ -1,8 +1,11 @@
 ---
 import "./Aboutme.css";
+import wave1 from "@assets/imgs/waves1.png";
+import wave2 from "@assets/imgs/wave2.png";
+import wave3 from "@assets/imgs/wave3.png";
 ---
 
-<div class="black-container  h-1/2">
+<div class="black-container h-1/2">
   <div class="decoration-section h-1/2">
     <h2>Now that you know a little about my services</h2>
     <h1>
@@ -10,11 +13,14 @@ import "./Aboutme.css";
       Project to the next level
     </h1>
     <h2>Want to learn more about me?</h2>
-    <a href="../../../public/docs/Moderno Profesional Currículum (1).pdf" download="JesusOmarCv">
+    <a
+      href="../../../public/docs/Moderno Profesional Currículum (1).pdf"
+      download="JesusOmarCv"
+    >
       <button>Download my cv</button>
     </a>
-    <img class="wave1" src="../../../public/imgs/waves1.png" />
-    <img class="wave2" src="../../../public/imgs/wave2.png" />
-    <img class="wave3" src="../../../public/imgs/wave3.png" />
+    <img class="wave1" src={wave1.src} />
+    <img class="wave2" src={wave2.src} />
+    <img class="wave3" src={wave3.src} />
   </div>
 </div>

@@ -1,62 +1,63 @@
 ---
-import './Services.css'
+import "./Services.css";
+import front from "@assets/icons/front.png";
+import back from "@assets/icons/back.png";
+import mobile from "@assets/icons/movil.png";
 ---
 
-<div class="bg-white h-[90vh] main-div-service justify-center align-middle  my-80 tablet:h-full">
-  <div class=" w-1/2 items-left justify-center  firts-container tablet:w-screen">
-
+<div
+  class="bg-white h-[90vh] main-div-service justify-center align-middle my-80 tablet:h-full"
+>
+  <div class="w-1/2 items-left justify-center firts-container tablet:w-screen">
     <div class="service-container">
-      <img src="../../../public/icons/front.png"/>
+      <img src={front.src} />
       <div class="service-info">
         <p>Front end development</p>
-       <p>code web sites  with React,typescript,tailwind/css</p>
+        <p>code web sites with React,typescript,tailwind/css</p>
       </div>
     </div>
 
     <div class="service-container">
-      <img src="../../../public/icons/back.png"/>
+      <img src={back.src} />
       <div class="service-info">
         <p>Back end development</p>
-       <p>code web sites  with React,typescript,tailwind/css</p>
+        <p>code web sites with React,typescript,tailwind/css</p>
       </div>
     </div>
 
-    <div class="service-container" >
-      <img src="../../../public/icons/movil.png"/>
+    <div class="service-container">
+      <img src={mobile.src} />
       <div class="service-info">
         <p>Mobile development</p>
-       <p>code web sites  with React,typescript,tailwind/css</p>
+        <p>code web sites with React,typescript,tailwind/css</p>
       </div>
     </div>
-
   </div>
 
-  <div class="w-1/2 flex flex-col justify-center   tablet:w-screen tablet:my-10">
-
+  <div class="w-1/2 flex flex-col justify-center tablet:w-screen tablet:my-10">
     <h3 class="">Services</h3>
 
     <h1 class="title-service">My Awesome services</h1>
-    <div class=" my-5">
+    <div class="my-5">
       <p>
-        Bring your ideas to life through a seamless fusion of creativity and inovation.
+        Bring your ideas to life through a seamless fusion of creativity and
+        inovation.
       </p>
       <p>
-        As a talented and dedicated full stack developer i offer a range of services that elevate your
-        business
+        As a talented and dedicated full stack developer i offer a range of
+        services that elevate your business
       </p>
     </div>
-   
-   <div  class="flex flex-row my-10  tablet:justify-center">
-    <div >
-     <h2 class="service_subtitle">6+</h2>
-     <p>Projects</p>
 
+    <div class="flex flex-row my-10 tablet:justify-center">
+      <div>
+        <h2 class="service_subtitle">6+</h2>
+        <p>Projects</p>
+      </div>
+      <div class="mx-10">
+        <h2 class="service_subtitle">4+</h2>
+        <p>years of experience</p>
+      </div>
     </div>
-    <div class=" mx-10">
-      <h2 class="service_subtitle">4+</h2>
-      <p>years of experience</p>
-    </div>
-   </div>
-
   </div>
 </div>

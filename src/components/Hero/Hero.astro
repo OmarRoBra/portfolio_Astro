@@ -2,6 +2,10 @@
 import "./Hero.css";
 import OmarShaped from "../../assets/imgs/omarshaped.png";
 import { Image } from "astro:assets";
+import instagram from "@assets/icons/instagram.png";
+import github from "@assets/icons/github.png";
+import linkedIn from "@assets/icons/linkedin.png";
+import email from "@assets/icons/email.png";
 ---
 
 <div class="h-screen main-div w-screen">
@@ -15,16 +19,16 @@ import { Image } from "astro:assets";
     </p>
     <div class="links-container">
       <div class="circle-container">
-        <img src="../../../public/icons/instagram.png" />
+        <img src={instagram.src} />
       </div>
       <div class="circle-container">
-        <img src="../../../public/icons/github.png" />
+        <img src={github.src} />
       </div>
       <div class="circle-container">
-        <img src="../../../public/icons/linkedin.png" />
+        <img src={linkedIn.src} />
       </div>
       <div class="circle-container">
-        <img src="../../../public/icons/email.png" />
+        <img src={email.src} />
       </div>
     </div>
     <a href="https://wa.me/3121963859"
