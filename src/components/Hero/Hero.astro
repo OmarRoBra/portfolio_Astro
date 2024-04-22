@@ -1,5 +1,7 @@
 ---
 import "./Hero.css";
+import OmarShaped from "../../assets/imgs/omarshaped.png";
+import { Image } from "astro:assets";
 ---
 
 <div class="h-screen main-div w-screen">
@@ -31,6 +33,6 @@ import "./Hero.css";
   </div>
 
   <div class="img-container">
-    <img src="../../../public/imgs/omarshaped.png" />
+    <Image src={OmarShaped} alt="dd" />
   </div>
 </div>
